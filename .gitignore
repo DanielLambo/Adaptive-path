@@ -1,5 +1,27 @@
-.env
-*.pyc
+# .gitignore
+
+# Environments
+.venv/
+venv/
+
+# Python cache
 __pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# OS-specific
+.DS_Store
+
+# Secrets
+.env
+
+# Data files
 data/*.zip
 data/predictions.json
+
+# Model artifacts - these should be downloaded from a model registry, not stored in git
+models/best_model.h5
+models/feature_scaler.pkl
+models/metadata.json
+models/label_encoder.pkl
