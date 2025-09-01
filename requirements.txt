@@ -1,14 +1,12 @@
-fastapi
-uvicorn[standard]
-neo4j
-python-dotenv
-aiohttp
-requests
-pandas
-numpy
-scikit-learn
-faker
-networkx
-matplotlib
+# requirements.txt
+#
+# Runtime dependencies for the adaptive learning path application.
+# Use 'pip install -r requirements.txt' to install.
+# For development, also install requirements-dev.txt
+
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+neo4j==5.20.0
 python-dotenv==1.0.1
-tensorflow-cpu==2.15.0
+pydantic==2.7.1
+numpy==1.26.4
