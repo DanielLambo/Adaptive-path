@@ -1,23 +1,10 @@
-# requirements-dev.txt
-#
-# Development and optional dependencies.
-# Use 'pip install -r requirements-dev.txt' after installing the base requirements.
-
 # --- Testing ---
-pytest==8.2.0
+pytest==8.4.1
 pytest-mock==3.12.0
-requests==2.31.0  # For smoke tests and scripts
+httpx==0.28.1
+faker==25.2.0
 
-# --- Code Quality & Formatting ---
-black==24.4.2
-flake8==7.0.0
+# --- Dev Tools ---
+black==24.8.0
+flake8==7.1.1
 mypy==1.9.0
-
-# --- Optional Dependencies ---
-# Retry mechanism used in neo4j_client
-tenacity==8.3.0
-
-# For ML model serving (CPU version)
-faker==25.2.0 # For generating mock data
-tensorflow-cpu==2.16.1
-scikit-learn==1.4.2  # For loading the feature_scaler.pkl with joblib
