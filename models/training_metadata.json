@@ -1,0 +1,10 @@
+{
+  "max_seq_length": 11,
+  "sequence_features": [
+    "score_normalized",
+    "time_spent_normalized",
+    "attempt_number",
+    "is_correct_encoded"
+  ],
+  "num_features": 4
+}
